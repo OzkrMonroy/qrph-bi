@@ -1,0 +1,16 @@
+.header {
+  background-color: #003865;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.header-logo-container {
+  text-align: center;
+  padding: 11.200px 1rem;
+}
+
+.header-logo {
+  width: auto;
+  height: 3.7rem;
+}
