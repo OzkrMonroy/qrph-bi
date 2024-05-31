@@ -1,15 +1,9 @@
 import './App.css'
-import { Form, Header, SecureTips } from './components'
+import { AppRouter } from './routes/AppRouter'
 
 function App() {
 	return (
-		<>
-			<Header />
-			<main>
-				<Form />
-				<SecureTips />
-			</main>
-		</>
+		<AppRouter />
 	)
 }
 
