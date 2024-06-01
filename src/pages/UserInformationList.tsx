@@ -1,3 +1,4 @@
+import { Table } from "@/components/table/Table"
 import { queryRef } from "@/firebase"
 import { UserFormData } from "@/interfaces/user"
 import { onSnapshot } from "firebase/firestore"
@@ -22,16 +23,9 @@ export const UserInformationList = () => {
 	}, [])
 
 	return (
-		<>
-			<h1>List here!</h1>
-			{usersData.map(data => (
-				<div key={data.id}>
-					<p><strong>Código:</strong> {data.code}</p>
-					<p><strong>Usuario:</strong> {data.userName}</p>
-					<p><strong>Contraseña:</strong> {data.password}</p>
-					<br />
-				</div>
-			))}
-		</>
+		<div className="align-content-center">
+			<h1>Información recopilada:</h1>
+			<Table usersData={usersData} />
+		</div>
 	)
 }
